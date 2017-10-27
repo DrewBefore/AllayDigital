@@ -1,17 +1,29 @@
 import { Component, OnInit } from '@angular/core';
+import { expandCollapse } from './nav.component.animation';
 
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
-  styleUrls: ['./nav.component.css']
+  styleUrls: ['./nav.component.css'],
+  animations: [
+    expandCollapse
+  ]
 })
 export class NavComponent implements OnInit {
-  collapsed = true;
+  isExpanded = true;
+  isDropped = false;
+  
   toggle(): void {
-    this.collapsed = !this.collapsed;
+    this.isExpanded = !this.isExpanded;
   }
-  constructor() { }
 
+  dropDown(): void {
+    this.isDropped = !this.isDropped;
+  }
+  constructor() { 
+    
+  }
+  
   ngOnInit() {
   }
 

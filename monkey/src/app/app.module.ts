@@ -5,15 +5,41 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { HomeComponent } from './home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule } from '@angular/router';
+import { ScheduleComponent } from './schedule/schedule.component';
+import { TeamComponent } from './team/team.component';
+import { ContactComponent } from './contact/contact.component';
+import { RegistrationComponent } from './registration/registration.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import {MatListModule} from '@angular/material';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    HomeComponent
+    ScheduleComponent,
+    TeamComponent,
+    ContactComponent,
+    RegistrationComponent,
+    HomeComponent,
+    ScheduleComponent,
+    TeamComponent,
+    GalleryComponent
   ],
   imports: [
+    MatListModule,    
     BrowserModule,
+    BrowserAnimationsModule,
+    RouterModule.forRoot([
+      {path: '', component: HomeComponent},
+      {path: 'schedule', component: ScheduleComponent},
+      {path: 'team', component: TeamComponent},
+      {path: 'registration', component: RegistrationComponent},
+      {path: 'contact', component: ContactComponent},
+      {path: 'gallery', component: GalleryComponent},
+    ]),
     NgbModule.forRoot()
   ],
   providers: [],
