@@ -1,0 +1,177 @@
+
+.new-btn {
+    border: 1px solid #333;
+    border-radius: 6px;
+	font-family: inherit;
+	font-size: inherit;
+	color: green;
+	background: none;
+	cursor: pointer;
+	padding: 10px 40px;
+	display: inline-block;
+	margin: 15px 5px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.new-btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+/* Pseudo elements for icons */
+.new-btn:before,
+.icon-heart:after,
+.icon-star:after,
+.icon-plus:after,
+.icon-file:before {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Button 5 */
+.new-btn-5 {
+    color: white;
+    background-color: green;
+    border-color: #ccc;
+	height: 45px;
+	min-width: 100px;
+	line-height: 24px;
+	font-size: 16px;
+	overflow: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+/* .new-btn-5:hover {
+    background-color: rgba(255, 255, 255, 0.322);
+    border-color: purple;
+    color: white;
+    transition: .5s;
+} */
+
+.new-btn-5:active {
+	background: white;
+	top: 2px;
+}
+
+.new-btn-5 span {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: all 0.3s;
+	-webkit-backface-visibility: hidden;
+	-moz-transition: all 0.3s;
+	-moz-backface-visibility: hidden;
+	transition: all 0.3s;
+	backface-visibility: hidden;
+}
+
+.new-btn-5:before {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	line-height: 2.5;
+	font-size: 180%;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.new-btn-5:active:before {
+	color: green;
+}
+
+/* Button 5a */
+.new-btn-5a:hover span {
+	-webkit-transform: translateY(300%);
+	-moz-transform: translateY(300%);
+	-ms-transform: translateY(300%);
+	transform: translateY(300%);
+}
+
+.new-btn-5a:before {
+	left: 0;
+	top: -120%; 
+}
+.new-btn-5a:after {
+	left: 0;
+	top: -33%;
+}
+
+.new-btn-5a:hover:before {
+	top: -13px;
+}
+
+.icon-yelp:before {
+    font-family: FontAwesome;
+    content: "\f1e9";
+}
+.icon-twitter:before {
+    font-family: FontAwesome;
+    content: "\f099";
+}
+.icon-instagram:before {
+    font-family: FontAwesome;
+    content: "\f16d";
+}
+.icon-pinterest:before {
+    font-family: FontAwesome;
+    content: "\f0d2";
+}
+.icon-google:before {
+    font-family: FontAwesome;
+    content: "\f0d5";
+}
+.icon-facebook:before {
+    font-family: FontAwesome;
+    content: "\f09a";
+}
+.icon-youtube:before {
+    font-family: FontAwesome;
+    content: "\f167";
+}
+.icon-resume:before {
+    font-family: FontAwesome;
+    content: "\f15c";    
+}
+.icon-github:before {
+    font-family: FontAwesome;
+    content: "\f09b";    
+}
+.icon-project:before {
+    font-family: FontAwesome;
+    content: "\f1b2";    
+}
+.icon-lin:before {
+	font-family: FontAwesome;
+	content: "\f0e1"
+}
+
+.social-links {
+	margin: 50px;
+}
+
+.footer {
+	padding-top: 75px;
+	background-color: rgb(226, 222, 222);
+	padding-bottom: 8px;
+}

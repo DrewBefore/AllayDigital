@@ -1,3 +1,62 @@
-<p>
-  contact works!
-</p>
+<div class="jumbotron">
+    <h1 class="display-3">Contact Working</h1>
+    <p class="lead">Our team is full of experts that are here to help you achieve your goals.</p>
+</div>
+<div class="container">
+  <div class="row contact">
+    <div class="col-lg-4">
+      <h2>Monkey Bar Gym</h2>
+      <ul>
+        <li>2505 152nd ave NE,
+            Redmond, WA 98052</li>
+        <li>206-931-6500</li>
+        <li>Info@mbgnw.com</li>
+      </ul>
+    </div>
+    <div class="col-lg-8">
+      <form>
+        <mat-card>
+            <h4>Contact Us</h4>
+            <table class="example-full-width" cellspacing="0"><tr>
+              <td><mat-form-field class="example-full-width">
+                <input matInput placeholder="First name">
+              </mat-form-field></td>
+              <td><mat-form-field class="example-full-width">
+                <input matInput placeholder="Last Name">
+              </mat-form-field></td>
+              <td><mat-form-field class="example-full-width">
+                <input matInput placeholder="Email">
+              </mat-form-field></td>
+            </tr></table>
+          
+            <p>
+              <mat-form-field class="example-full-width">
+                <input matInput placeholder="Address">
+              </mat-form-field>
+              <mat-form-field class="example-full-width">
+                <input matInput placeholder="Address 2">
+              </mat-form-field>
+            </p>
+          
+            <table class="example-full-width" cellspacing="0"><tr>
+              <td><mat-form-field class="example-full-width">
+                <input matInput placeholder="City">
+              </mat-form-field></td>
+              <td><mat-form-field class="example-full-width">
+                <input matInput placeholder="State">
+              </mat-form-field></td>
+              <td><mat-form-field class="example-full-width">
+                <input matInput #postalCode maxlength="5" placeholder="Postal Code" value="94043">
+                <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
+              </mat-form-field></td>
+            </tr>
+          </table>
+            <mat-form-field class="textArea">
+              <textarea rows="4" cols="100" matInput placeholder="Comments"></textarea>
+            </mat-form-field>
+            <button mat-raised-button color="primary">Submit</button>
+          </mat-card> 
+        </form>
+    </div>
+  </div>
+</div>

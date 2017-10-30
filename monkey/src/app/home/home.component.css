@@ -3,7 +3,6 @@
 /* Padding below the footer and lighter body text */
 
 body {
-    padding-top: 3rem;
     padding-bottom: 3rem;
     color: #5a5a5a;
   }
@@ -68,7 +67,6 @@ body {
     line-height: 1;
     letter-spacing: -.05rem;
   }
-  
   
   /* RESPONSIVE CSS
   -------------------------------------------------- */

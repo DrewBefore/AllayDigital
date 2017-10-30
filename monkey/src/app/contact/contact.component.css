@@ -1,0 +1,23 @@
+.example-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .example-container > * {
+    width: 100%;
+  }
+
+  .contact {
+      margin-bottom: 25px;
+  }
+
+  ul {
+      padding-left: 0px;
+  }
+
+  .textArea {
+      width: 100%;
+  }
+  li {
+      list-style: none;
+  }

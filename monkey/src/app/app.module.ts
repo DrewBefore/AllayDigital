@@ -12,7 +12,9 @@ import { TeamComponent } from './team/team.component';
 import { ContactComponent } from './contact/contact.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { GalleryComponent } from './gallery/gallery.component';
-import {MatListModule} from '@angular/material';
+import {MatListModule, MatFormFieldModule, MatCheckboxModule, MatButtonModule, MatInputModule, MatCardModule} from '@angular/material';
+import { FooterComponent } from './footer/footer.component';
+import { AngularFontAwesomeModule } from 'angular-font-awesome/angular-font-awesome';
 
 
 @NgModule({
@@ -26,10 +28,17 @@ import {MatListModule} from '@angular/material';
     HomeComponent,
     ScheduleComponent,
     TeamComponent,
-    GalleryComponent
+    GalleryComponent,
+    FooterComponent
   ],
   imports: [
-    MatListModule,    
+    MatListModule, 
+    MatButtonModule,
+    MatCheckboxModule,
+    MatCardModule,
+    MatInputModule,
+    MatFormFieldModule,
+    AngularFontAwesomeModule,   
     BrowserModule,
     BrowserAnimationsModule,
     RouterModule.forRoot([
