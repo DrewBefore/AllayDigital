@@ -12,7 +12,7 @@ import { TeamComponent } from './team/team.component';
 import { ContactComponent } from './contact/contact.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { GalleryComponent } from './gallery/gallery.component';
-import {MatListModule, MatFormFieldModule, MatCheckboxModule, MatButtonModule, MatInputModule, MatCardModule} from '@angular/material';
+import {MatListModule, MatIconModule, MatFormFieldModule, MatCheckboxModule, MatButtonModule, MatInputModule, MatCardModule} from '@angular/material';
 import { FooterComponent } from './footer/footer.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome/angular-font-awesome';
 
@@ -34,6 +34,7 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome/angular-font-awes
   imports: [
     MatListModule, 
     MatButtonModule,
+    MatIconModule,
     MatCheckboxModule,
     MatCardModule,
     MatInputModule,

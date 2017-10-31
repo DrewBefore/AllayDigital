@@ -4,17 +4,52 @@
 </div>
 <div class="container">
   <div class="row contact">
-    <div class="col-lg-4">
-      <h2>Monkey Bar Gym</h2>
-      <ul>
-        <li>2505 152nd ave NE,
-            Redmond, WA 98052</li>
-        <li>206-931-6500</li>
-        <li>Info@mbgnw.com</li>
-      </ul>
-    </div>
     <div class="col-lg-8">
-      <form>
+        <form>
+            <mat-card>
+              <h4>Contact Us</h4>
+              <div class="row">
+                <div class="col-sm-6">
+                  <mat-form-field class="form-item"><input matInput placeholder="First Name"></mat-form-field>
+                </div>
+                <div class="col-sm-6">
+                  <mat-form-field class="form-item"><input matInput placeholder="Last Name"></mat-form-field>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                    <mat-form-field class="form-item"><input required matInput placeholder="Email"></mat-form-field>                
+                </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-8">
+                      <mat-form-field class="form-item"><input matInput placeholder="Address"></mat-form-field>
+                  </div>
+                  <div class="col-sm-4">
+                      <mat-form-field class="form-item"><input matInput placeholder="Postal Code"></mat-form-field>
+                  </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                    <mat-form-field class="textArea">
+                      <textarea rows="4" cols="100" matInput placeholder="Comments"></textarea>
+                    </mat-form-field>  
+                </div>
+              </div>
+              <button mat-raised-button color="primary">Submit</button>
+            </mat-card>
+          </form>
+    </div>
+        <div class="col-lg-4 contact-info">
+          <h2>Monkey Bar Gym</h2>
+          <ul>
+            <li>2505 152nd ave NE,
+                Redmond, WA 98052</li>
+            <li>206-931-6500</li>
+            <li>Info@mbgnw.com</li>
+          </ul>
+        </div>
+      <!-- <form>
         <mat-card>
             <h4>Contact Us</h4>
             <table class="example-full-width" cellspacing="0"><tr>
@@ -25,7 +60,7 @@
                 <input matInput placeholder="Last Name">
               </mat-form-field></td>
               <td><mat-form-field class="example-full-width">
-                <input matInput placeholder="Email">
+                <input matInput required placeholder="Email">
               </mat-form-field></td>
             </tr></table>
           
@@ -46,7 +81,7 @@
                 <input matInput placeholder="State">
               </mat-form-field></td>
               <td><mat-form-field class="example-full-width">
-                <input matInput #postalCode maxlength="5" placeholder="Postal Code" value="94043">
+                <input matInput #postalCode maxlength="5" placeholder="Postal Code">
                 <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
               </mat-form-field></td>
             </tr>
@@ -56,7 +91,6 @@
             </mat-form-field>
             <button mat-raised-button color="primary">Submit</button>
           </mat-card> 
-        </form>
-    </div>
+        </form> -->
   </div>
 </div>
