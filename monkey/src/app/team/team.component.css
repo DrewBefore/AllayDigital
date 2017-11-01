@@ -2,9 +2,10 @@
     margin: 10px auto;
 }
 
-img {
-
+mat-card {
+    margin-bottom: 15px;
 }
+
 ul {
     list-style: none;
     padding-left: 0;
