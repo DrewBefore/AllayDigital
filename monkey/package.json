@@ -1,5 +1,5 @@
 {
-  "name": "monkey",
+  "name": "monkeybargym",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
@@ -8,7 +8,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "deploy:gh" : "ng build --prod --base-href='https://drewbefore.github.io/AllayDigital' && ngh"
   },
   "private": true,
   "dependencies": {
