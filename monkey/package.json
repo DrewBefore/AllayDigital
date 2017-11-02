@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy:gh" : "ng build --prod --base-href='https://drewbefore.github.io/AllayDigital' && ngh"
+    "deploy:gh" : "ng build --prod --base-href=https://drewbefore.github.io/AllayDigital/ && ngh"
   },
   "private": true,
   "dependencies": {
