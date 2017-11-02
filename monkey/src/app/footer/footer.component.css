@@ -4,12 +4,12 @@
     border-radius: 6px;
 	font-family: inherit;
 	font-size: inherit;
-	color: green;
+	color: #388e3c;
 	background: none;
 	cursor: pointer;
 	padding: 10px 40px;
 	display: inline-block;
-	margin: 15px 5px;
+	margin: 10px 5px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: 700;
@@ -49,7 +49,7 @@
 /* Button 5 */
 .new-btn-5 {
     color: white;
-    background-color: green;
+    background-color: #388e3c;
     border-color: #ccc;
 	height: 45px;
 	min-width: 100px;
@@ -69,7 +69,7 @@
 } */
 
 .new-btn-5:active {
-	background: white;
+	background: #76ff03;
 	top: 2px;
 }
 
@@ -97,7 +97,7 @@
 }
 
 .new-btn-5:active:before {
-	color: green;
+	color: #76ff03;
 }
 
 /* Button 5a */
@@ -114,11 +114,17 @@
 }
 .new-btn-5a:after {
 	left: 0;
-	top: -33%;
+	top: -20%;
 }
 
 .new-btn-5a:hover:before {
 	top: -13px;
+	color: green;
+	background-color: white;
+}
+
+.new-btn-5a:hover {
+	background-color: white;
 }
 
 .icon-yelp:before {
@@ -167,11 +173,11 @@
 }
 
 .social-links {
-	margin: 50px;
+	margin-bottom: 15px;
 }
 
 .footer {
-	padding-top: 75px;
+	padding-top: 50px;
 	background-color: rgb(226, 222, 222);
 	padding-bottom: 8px;
 }
