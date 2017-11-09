@@ -16,7 +16,6 @@ import {MatListModule, MatTableModule, MatIconModule, MatFormFieldModule, MatChe
 import { FooterComponent } from './footer/footer.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome/angular-font-awesome';
 
-
 @NgModule({
   declarations: [
     AppComponent,
