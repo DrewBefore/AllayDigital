@@ -14,3 +14,7 @@ a img {
 .active .nav-link, .dropdown-toggle{
     color: #76ff03;
 }
+
+nav img:hover {
+    transform: scale(1.1);
+}
