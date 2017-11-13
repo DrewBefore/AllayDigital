@@ -1,34 +1,4 @@
-.media {
-    margin: 10px auto;
-}
-
 mat-card {
     margin-bottom: 15px;
 }
 
-ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-li {
-    margin-bottom: 10px;
-}
-li:nth-child(odd) {
-    background: rgb(245, 241, 241);
-}
-
-/* mat-card {
-    color: white;
-    background-color: rgb(22, 21, 21);
-    border: 1px solid green;
-}
-
-mat-card-subtitle {
-    color: white;
-} */
-
-
-.media-body {
-    margin: 10px;
-}

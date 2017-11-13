@@ -4,77 +4,23 @@
 </div>
 
 <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <mat-card>
-          <mat-card-title-group>
-            <mat-card-title>Greg Jones</mat-card-title>
-            <mat-card-subtitle>Title Goes Here</mat-card-subtitle>
-            <mat-card-subtitle>Center-aligned media</mat-card-subtitle>
-            <mat-card-subtitle>Center-aligned media</mat-card-subtitle>
-            <img mat-card-lg-image src="https://d3ciwvs59ifrt8.cloudfront.net/b3bf9947-0261-4490-84d4-172a0f33ee44/348c8f4f-f0ae-4caa-a31b-4ada72bc6813.jpg" alt="Generic placeholder image">
-          </mat-card-title-group>
-          <hr>
-          <mat-card-content>
-            <div class="row no-gutters">
-              <div class="col">
-                <ul>
-                  <li>B.Sc. Physical Education & Nutritional Health EOU 2008</li>
-                  <li>Certified Natural Trainer(CNT 1) Monkey Bar Gym</li>
-                  <li>Nautilus Institute Accredited Coach</li>
-                  <li>Three Sport Collegiate Athlete/National All Star in Football</li>
-                  <li>Brazilian Jiu-Jitsu Competitor/Natural Bodybuilding Heavyweight Champion</li>
-                  <li>NPC Double Nationally Qualified Nationals Classic Physique and Masters Bodybuilding competitor 2016-2017</li>
-                  <li>Nov 5th 2016 Idaho Cup Champion Classic Physique and Master Bodybuilding Champion, 2012 Vancouver Natural Heavyweight Masters Champion</li>
-                </ul>
-              </div>
-            </div>
-          </mat-card-content>
+  <div class="row">
+    <div class="col-md-6">
+      <div *ngFor="let member of team index as i; even as isEven">
+        <mat-card *ngIf="isEven">
+          <app-coach [member]=member></app-coach>
         </mat-card>
       </div>
-      <div class="col-md-6">
-          <mat-card>
-            <mat-card-title-group>
-              <mat-card-title>Rodrigo Lopes</mat-card-title>
-              <mat-card-subtitle>Head Instructor</mat-card-subtitle>
-              <mat-card-subtitle>Center-aligned media</mat-card-subtitle>
-              <mat-card-subtitle>Center-aligned media</mat-card-subtitle>
-              <img mat-card-lg-image src="https://d3ciwvs59ifrt8.cloudfront.net/b3bf9947-0261-4490-84d4-172a0f33ee44/348c8f4f-f0ae-4caa-a31b-4ada72bc6813.jpg" alt="Generic placeholder image">
-            </mat-card-title-group>
-            <hr>
-            <mat-card-content>
-              <div class="row no-gutters">
-                <div class="col">
-                  <p>
-                      3rd Degree Black Belt under Professor Marcio Feitosa and Master Carlos Gracie Jr. 
-                      He is a certified Black Belt under Gracie Barra. 
-                      Professor Rodrigo was the founding member of Gracie Barra Seattle and Gracie Barra Northwest. 
-                      His leadership his grown the organization to one of the largest in WA while retaining the same friendly, supportive, family atmosphere we’ve had since the beginning. 
-                      Professor Rodrigo provides excellent professional instruction in a safe environment that is accessible for all levels of interest, fitness and age.                      
-                  </p>
-                </div>
-              </div>
-            </mat-card-content>
-          </mat-card>
-        </div>
-    </div>  
+    </div>
 
-    <hr>
-    <!-- <div class="media">
-        <img class="d-flex align-self-center mr-3" src="https://d3ciwvs59ifrt8.cloudfront.net/b3bf9947-0261-4490-84d4-172a0f33ee44/348c8f4f-f0ae-4caa-a31b-4ada72bc6813.jpg" alt="Generic placeholder image">
-        <div class="media-body">
-          <h5 class="mt-0">Center-aligned media</h5>
-          <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-          <p class="mb-0">Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-        </div>
+    <div class="col-md-6">
+      <div *ngFor="let member of team index as i; even as isEven">
+        <mat-card *ngIf="!isEven">
+          <app-coach [member]=member></app-coach>
+        </mat-card>
       </div>
-      <hr>
-    <div class="media">
-        <img class="d-flex align-self-center mr-3" src="https://d3ciwvs59ifrt8.cloudfront.net/b3bf9947-0261-4490-84d4-172a0f33ee44/348c8f4f-f0ae-4caa-a31b-4ada72bc6813.jpg" alt="Generic placeholder image">
-        <div class="media-body">
-          <h5 class="mt-0">Center-aligned media</h5>
-          <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-          <p class="mb-0">Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-        </div>
-      </div> -->
+    </div>
+
+  </div>
+  <hr>
 </div>

@@ -1,3 +1,4 @@
+import { TeamService } from './team/team.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -15,6 +16,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import {MatListModule, MatTableModule, MatIconModule, MatFormFieldModule, MatCheckboxModule, MatButtonModule, MatInputModule, MatCardModule} from '@angular/material';
 import { FooterComponent } from './footer/footer.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome/angular-font-awesome';
+import { CoachComponent } from './coach/coach.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome/angular-font-awes
     ScheduleComponent,
     TeamComponent,
     GalleryComponent,
-    FooterComponent
+    FooterComponent,
+    CoachComponent
   ],
   imports: [
     MatListModule, 
@@ -52,7 +55,7 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome/angular-font-awes
     ]),
     NgbModule.forRoot()
   ],
-  providers: [],
+  providers: [TeamService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

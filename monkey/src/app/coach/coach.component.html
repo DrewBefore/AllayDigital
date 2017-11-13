@@ -1,0 +1,15 @@
+<mat-card-title-group>
+  <mat-card-title>{{member.name}}</mat-card-title>
+  <mat-card-subtitle>{{member.title}}</mat-card-subtitle>
+  <img mat-card-lg-image src={{member.img}} alt="{{member.name}}s image">
+</mat-card-title-group>
+<hr>
+<mat-card-content>
+  <div class="row no-gutters">
+    <div class="col">
+      <ul>
+        <li *ngFor="let item of member.bio">{{item}}</li>
+      </ul>
+    </div>
+  </div>
+</mat-card-content>
