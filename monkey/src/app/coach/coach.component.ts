@@ -6,9 +6,10 @@ import { Component, OnInit, Input} from '@angular/core';
   styleUrls: ['./coach.component.css']
 })
 export class CoachComponent implements OnInit {
-  @Input() member: object;
+  @Input() member;
 
   constructor() {
+    this.member = {name: "", bio: [""], img: "", title: ""};
 }
 
 
