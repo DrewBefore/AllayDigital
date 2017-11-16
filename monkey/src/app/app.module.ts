@@ -1,6 +1,6 @@
 import { TeamService } from './team/team.service';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -55,6 +55,7 @@ import { CoachComponent } from './coach/coach.component';
     ]),
     NgbModule.forRoot()
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [TeamService],
   bootstrap: [AppComponent]
 })

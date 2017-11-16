@@ -1,7 +1,6 @@
 import { TeamService } from './team.service';
 import { Component, OnInit } from '@angular/core';
 import { Http } from '@angular/http';
-
 @Component({
   selector: 'app-team',
   templateUrl: './team.component.html',

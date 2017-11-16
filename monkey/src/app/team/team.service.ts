@@ -5,7 +5,7 @@ export class TeamService {
   team: { name: string, title: string, img: string, bio: Array<string> }[] = [
     { 
     name: "Greg Jones", 
-    title: "Coach", 
+    title: "Head Strength and Conditioning Specialist", 
     img: "https://d3ciwvs59ifrt8.cloudfront.net/b3bf9947-0261-4490-84d4-172a0f33ee44/348c8f4f-f0ae-4caa-a31b-4ada72bc6813.jpg", 
     bio: [
       "B.Sc. Physical Education & Nutritional Health EOU 2008",

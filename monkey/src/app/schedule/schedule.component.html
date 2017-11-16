@@ -3,49 +3,12 @@
   <p class="lead">Our team is full of experts that are here to help you achieve your goals.</p>
 </div>
 
-<div class="container example-container mat-elevation-z8">
-  <div class="example-header">
-    <mat-form-field floatPlaceholder="never">
-      <input matInput #filter placeholder="Filter users">
-    </mat-form-field>
-  </div>
-
-  <mat-table #table [dataSource]="dataSource">
-
-    <!--- Note that these columns can be defined in any order.
-          The actual rendered columns are set as a property on the row definition" -->
-
-    <!-- ID Column -->
-    <ng-container matColumnDef="userId">
-      <mat-header-cell *matHeaderCellDef> Date </mat-header-cell>
-      <mat-cell *matCellDef="let row"> {{row.id}} </mat-cell>
-    </ng-container>
-
-    <!-- Progress Column -->
-    <ng-container matColumnDef="progress">
-      <mat-header-cell *matHeaderCellDef> Class </mat-header-cell>
-      <mat-cell *matCellDef="let row"> {{row.progress}} </mat-cell>
-    </ng-container>
-
-    <!-- Name Column -->
-    <ng-container matColumnDef="userName">
-      <mat-header-cell *matHeaderCellDef> Instructor </mat-header-cell>
-      <mat-cell *matCellDef="let row"> {{row.name}} </mat-cell>
-    </ng-container>
-
-    <!-- Color Column -->
-    <ng-container matColumnDef="color">
-      <mat-header-cell *matHeaderCellDef> Class Type </mat-header-cell>
-      <mat-cell *matCellDef="let row" [style.color]="row.color"> {{row.color}} </mat-cell>
-    </ng-container>
-
-    <!-- Room Column -->
-    <ng-container matColumnDef="room">
-      <mat-header-cell *matHeaderCellDef> Room </mat-header-cell>
-      <mat-cell *matCellDef="let row" [style.color]="row.color"> {{row.color}} </mat-cell>
-    </ng-container>
-
-    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
-  </mat-table>
+<div class="container">
+  <mat-card>
+    <healcode-widget data-type="schedules" data-widget-partner="object" data-widget-id="211796549c6" data-widget-version="1"></healcode-widget>
+    <div class="text-center">
+      <button *ngIf="showButton" mat-raised-button color="primary" (click)="reload()">Generate Schedule</button>
+    </div>
+  </mat-card>
+  <hr>
 </div>
