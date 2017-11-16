@@ -28,15 +28,11 @@ export class TeamService {
       "Excellent professional instruction in a safe environment that is accessible for all levels"
     ]},
     { 
-    name: "Rodrigo Lopes", 
-    title: "Head Instructor", 
+    name: 'Daniel Eng "CoachDyanamo"', 
+    title: "Head MMA Boxing, Kickboxing/Muay Thai Instructor", 
     img: "https://d3ciwvs59ifrt8.cloudfront.net/b3bf9947-0261-4490-84d4-172a0f33ee44/348c8f4f-f0ae-4caa-a31b-4ada72bc6813.jpg", 
     bio: [
-      "3rd Degree black belt under professor Marcio Feitosa and master Carlos Gracie Jr.",
-      "Certified black belt under Gracie Barra", 
-      "Founding member of the Gracie Barra Seattle and Gracie Barra Northwest",
-      "His leadership has grown the organization to noe of the largest in Washington",
-      "Excellent professional instruction in a safe environment that is accessible for all levels"
+      "If your interested in scheduling a free orientation with Coach Dynamo, please email info@mbgnw.com",
     ]},
     { 
     name: "Rodrigo Lopes", 
