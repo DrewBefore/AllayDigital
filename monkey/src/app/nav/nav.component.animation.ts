@@ -2,10 +2,10 @@ import { trigger, transition, state, animate, style, keyframes, useAnimation, qu
 
 export const expandCollapse = trigger('expandCollapse', [
     state('collapsed', style({
-      height: 0,
-      paddingTop: 0,
-      paddingBottom: 0,
-      opacity: 0
+      height: '*',
+      paddingTop: '*',
+      paddingBottom: '*',
+      opacity: 1
     }
     )),
     transition('collapsed => expanded', [

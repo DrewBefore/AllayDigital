@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ViewChild, ElementRef, OnInit } from '@angular/core';
 import { expandCollapse } from './nav.component.animation';
 
 @Component({
@@ -9,22 +9,23 @@ import { expandCollapse } from './nav.component.animation';
     expandCollapse
   ]
 })
-export class NavComponent implements OnInit {
-  isExpanded = true;
+export class NavComponent {
+  @ViewChild('navbarToggler') navbarToggler:ElementRef;
+  public navbarCollapsed = true;
   isDropped = false;
+  isExpanded = false;
   
   toggle(): void {
     this.isExpanded = !this.isExpanded;
   }
 
-  dropDown(): void {
-    this.isDropped = !this.isDropped;
-  }
-  constructor() { 
-    
-  }
-  
-  ngOnInit() {
+  navBarTogglerIsVisible() {
+    return this.navbarToggler.nativeElement.offsetParent !== null;
   }
 
+  collapseNav() {
+    if (this.navBarTogglerIsVisible()) {
+      this.navbarToggler.nativeElement.click();
+    }
+  }
 }
