@@ -67,6 +67,19 @@ export class TeamService {
       "Program Director of Monkey Bar Gym/Gracie Barra Bellevue and CNT1 Certified Natural Trainer Monkey Bar Gym",    
       'Amy "The Resurrection" is also married to, teammate and pro MMA fighter, Dex Montenegro. They are the main subjects of the documentary Fight Fam'
     ]},
+    { 
+    name: "Corinne Messer", 
+    title: "Personal Trainer, CPT", 
+    img: "../../assets/corrine.jpg", 
+    bio: [
+      "Certified Personal Fitness Trainer - National Academy of Sports Medicine",
+      "Exercise Science Nutrition Consultant, Precision Nutrition",
+      "Weightloss Specialist - Naturopathic Physicians Group",
+      "Bootcamp Instructor - Tabata Bootcamp" ,
+      "Yoga Instructor - Prana Yoga College (500hr)",
+      "Top Ten National ranking climbing competitor, US Climbing Association",
+      "Climbing Coach/Instructor/Guide, US Climbing Association" 
+    ]},
 
   ];
   constructor() { }

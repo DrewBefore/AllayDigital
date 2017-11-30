@@ -24,6 +24,7 @@ export class ScheduleComponent implements OnDestroy, OnInit {
     document.body.appendChild(this.script)
     this.script.src = 'https://widgets.healcode.com/javascripts/healcode.js';
   }
+  
   ngOnDestroy(){
     this.showButton = false;
   }   
