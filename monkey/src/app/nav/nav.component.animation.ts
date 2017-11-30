@@ -14,6 +14,7 @@ export const expandCollapse = trigger('expandCollapse', [
         paddingTop: '*',
         paddingBottom: '*',
         opacity: 1,
+        color: 'green'
       })),
     ]),
 

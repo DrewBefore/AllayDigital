@@ -52,7 +52,6 @@ body {
     margin-left: .75rem;
   }
   
-  
   /* Featurettes
   ------------------------- */
   
@@ -76,9 +75,32 @@ body {
     text-align: right;
   }
 
+  .join {
+    color: green !important;
+    font-size: 5rem;
+    padding: 15px;
+    border-radius: 25%;
+    margin-top: 35%;
+    text-align: center;
+  }
+
+  .join:hover {
+    color: #76ff03 !important;
+    border-bottom: 5px solid #76ff03;
+    cursor: pointer;
+    background-color: gray;
+    transition: .3s;
+  }
+
   @media (max-width: 768px) {
     .carousel-caption {
       text-align: center;
+    }
+    .join {
+      margin-top: 15px;
+    }
+    .showbutton {
+      margin-bottom: 15px;
     }
   }
 
@@ -101,3 +123,14 @@ body {
       margin-top: 7rem;
     }
   }
+
+  .edge-card {
+    height: 95%;
+    margin-top: 2.5%;
+  }
+
+  .zippy {
+    margin-top: 10px;
+  }
+
+

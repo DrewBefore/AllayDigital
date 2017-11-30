@@ -19,6 +19,12 @@ export class NavComponent {
     this.isExpanded = !this.isExpanded;
   }
 
+  toggleHome() : void {
+    if (this.isExpanded) {
+      this.isExpanded = false;
+    }
+  }
+
   navBarTogglerIsVisible() {
     return this.navbarToggler.nativeElement.offsetParent !== null;
   }

@@ -56,22 +56,28 @@
     <!-- Three columns of text below the carousel -->
     <div class="row">
       <div class="col-lg-4">
-        <img class="rounded-circle" src="https://d3ciwvs59ifrt8.cloudfront.net/a9b1a2f1-5aa3-4e7e-a365-fada631a622f/a3b4cc3a-c119-48ea-bc1f-32f549e5469d.png" alt="Generic placeholder image" width="140" height="140">
-        <h2>Heading</h2>
-        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-        <p><a routerLink="/contact"><button mat-raised-button color="primary">More Info</button></a></p>
+        <mat-card class="edge-card">
+          <img class="rounded-circle" src="https://image.flaticon.com/icons/svg/511/511225.svg" alt="Generic placeholder image" width="140" height="140">
+          <h2>Stronger</h2>
+          <p>First skill-based gym in the country. Doesn't use exercise or weight machines, mirrors, or require shoes.</p>
+          <p><a routerLink="/contact"><button mat-raised-button color="primary">More Info</button></a></p>
+        </mat-card>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <img class="rounded-circle" src="https://media.istockphoto.com/photos/man-practising-weightlifting-iii-picture-id500627244?k=6&m=500627244&s=612x612&w=0&h=tJh5gKIj_0BKWJzpNo89IIDeiksb2pMoQKOTA7YCjeo=" alt="Generic placeholder image" width="140" height="140">
-        <h2>Heading</h2>
-        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-        <p><a routerLink="/contact"><button mat-raised-button color="primary">More Info</button></a></p>
+        <mat-card>
+          <img class="rounded-circle" src="https://image.flaticon.com/icons/svg/188/188333.svg" alt="Generic placeholder image" width="140" height="140">
+          <h2>Healthier</h2>
+          <p>First gym in the country that incorporates plant-based nutrition to achieve power and strength, rather than relying on animal by-products or supplements.</p>
+          <p><a routerLink="/contact"><button mat-raised-button color="primary">More Info</button></a></p>
+        </mat-card>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <img class="rounded-circle" src="http://ak1.picdn.net/shutterstock/videos/3634391/thumb/1.jpg" alt="Generic placeholder image" width="140" height="140">
-        <h2>Heading</h2>
-        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <p><a routerLink="/contact"><button mat-raised-button color="primary">More Info</button></a></p>
+        <mat-card class="edge-card">
+          <img class="rounded-circle" src="https://image.flaticon.com/icons/png/512/417/417803.png" alt="Generic placeholder image" width="140" height="140">
+          <h2>Together</h2>
+          <p>One of the first gyms in the country to offer challenging, partner-based training regardless of fitness level.</p>
+          <p><a routerLink="/contact"><button mat-raised-button color="primary">More Info</button></a></p>
+        </mat-card>
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
 
@@ -81,36 +87,87 @@
     <hr class="featurette-divider">
 
     <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">What is MonkeyBarGym? <span class="text-muted">Good Question.</span></h2>
+          <p class="lead">
+              Our philosophy is based on three foundations that build on one another to produce the most holistic approach in the industry: 
+              Natural Training, Restoration Yoga, and Plant-Based Nutrition. 
+              By engaging in this “Wheel of Life,” 
+              you will learn the skills necessary to rebuild and realign your body, 
+              train like a warrior, and eat plant strong. 
+              Combined, these three aspects are called MBG3.              
+          </p>
+          
+          <button class="showButton" [class.expanded]="isExpanded" (click)="toggle()" mat-raised-button color="primary">Show {{moreless}}</button>
+          
+          <div >
+            <p [@expandCollapse]="isExpanded ? 'expanded' : 'collapsed'" class="zippy">
+              We strive to change the world of fitness from being one of isolation to one that helps people and the planet.
+            </p>
+            <p [@expandCollapse]="isExpanded ? 'expanded' : 'collapsed'" class="zippy">
+              This is why our workouts are partner-based. This is why we don’t use mirrors. And, this is why we train barefoot. MBG3 not only challenges our followers, but our trainers & instructors as well. We feel that you must first walk the walk, before you can talk the talk.
+            </p>
+            <p [@expandCollapse]="isExpanded ? 'expanded' : 'collapsed'" class="zippy">
+              We are driven to do what we do in hopes that we have a positive effect on everyone’s health and the plant’s health.
+            </p>
+          </div>
+          
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-fluid mx-auto" src="https://d3ciwvs59ifrt8.cloudfront.net/a9b1a2f1-5aa3-4e7e-a365-fada631a622f/a3b4cc3a-c119-48ea-bc1f-32f549e5469d.png" alt="Generic placeholder image">
+        </div>
       </div>
-      <div class="col-md-5">
-        <img class="featurette-image img-fluid mx-auto" src="http://downtownbellevue.com/wp-content/uploads/2017/09/23FITCLUB-Offers-Boutique-Fitness-Club-in-Downtown-Bellevue.png" alt="Generic placeholder image">
+  
+      <hr class="featurette-divider">
+        <div class="row featurette">
+        <div class="col-md-7 push-md-5 order-md-12">
+          <h2 class="featurette-heading">Our Mission      <span class="text-muted">See for yourself.</span></h2>
+          <p class="lead">
+            Monkey Bar Gym’s mission has been to create a revolution in health and fitness with a primary focus on functional ability.
+          </p>
+          <p class="lead">
+            Basic movements include: Running, Jumping, Crawling, Climbing, 
+            and using some simple pieces of equipment to focus on the basics. 
+            Once members have the basics down MBG challenges its members to increase their skill level to achieve the ultimate performance in strength, 
+            speed and stamina with hard workouts that push the individuals limits based on ability.
+          </p>
+        </div>
+        <div class="col-md-5 pull-md-7 order-md-1">
+          <img class="featurette-image img-fluid mx-auto" src="http://downtownbellevue.com/wp-content/uploads/2017/09/23FITCLUB-Offers-Boutique-Fitness-Club-in-Downtown-Bellevue.png" alt="Generic placeholder image">
+        </div>
       </div>
-    </div>
+      
+      <hr class="featurette-divider">
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Welcome to MonkeyBarGym! <span class="text-muted">It'll blow your mind.</span></h2>
+            <p class="lead">
+            </p>
+              <ul class="lead">
+                <li>MBG was created by Jon Hinds in 2000 and was the beginning of a fitness revolution.</li>
+                <li>MBGs are the only gyms in the nation to integrate full-body skills training for strength, speed and stamina and a plant-based diet for the health of people and our planet. Full-body skills training and Plant-based Nutrition is the MBG3.</li>
+                <li>Today, the Monkey Bar Gym is recognized world-wide as a health and fitness leader. Here are some of the milestones the Monkey Bar Gym has achieved in its short history:</li>
+              </ul>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" src="http://downtownbellevue.com/wp-content/uploads/2017/09/23FITCLUB-Offers-Boutique-Fitness-Club-in-Downtown-Bellevue.png" alt="Generic placeholder image">
+          </div>
+        </div>
+      
 
     <hr class="featurette-divider">
 
     <div class="row featurette">
-      <div class="col-md-7 push-md-5 order-md-12">
-        <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-      </div>
-      <div class="col-md-5 pull-md-7 order-md-1">
-        <img class="featurette-image img-fluid mx-auto" src="http://downtownbellevue.com/wp-content/uploads/2017/09/23FITCLUB-Offers-Boutique-Fitness-Club-in-Downtown-Bellevue.png" alt="Generic placeholder image">
-      </div>
-    </div>
+      <div class="col-md-7 order-md-12">
+        <h2 class="featurette-heading">Now its your turn,</h2>
 
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        <p class="lead">Let the Revolution Begin! Monkey Bar Gym’s mission has been to create a revolution in health and fitness with a primary focus on functional ability.
+          </p>
       </div>
-      <div class="col-md-5">
-        <img class="featurette-image img-fluid mx-auto" src="http://downtownbellevue.com/wp-content/uploads/2017/09/23FITCLUB-Offers-Boutique-Fitness-Club-in-Downtown-Bellevue.png" alt="Generic placeholder image">
+      <div class="col-md-5 order-md-1">
+          <h2 class="join">
+              <span routerLink="/contact">Join Us!</span>
+          </h2>
       </div>
     </div>
 
