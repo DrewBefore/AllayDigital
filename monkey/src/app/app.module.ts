@@ -17,6 +17,8 @@ import {MatListModule, MatTableModule, MatIconModule, MatFormFieldModule, MatChe
 import { FooterComponent } from './footer/footer.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome/angular-font-awesome';
 import { CoachComponent } from './coach/coach.component';
+import { ChallengeComponent } from './challenge/challenge.component';
+import { ServicesComponent } from './services/services.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { CoachComponent } from './coach/coach.component';
     TeamComponent,
     GalleryComponent,
     FooterComponent,
-    CoachComponent
+    CoachComponent,
+    ChallengeComponent,
+    ServicesComponent
   ],
   imports: [
     MatListModule, 
@@ -51,6 +55,8 @@ import { CoachComponent } from './coach/coach.component';
       {path: 'team', component: TeamComponent},
       {path: 'registration', component: RegistrationComponent},
       {path: 'contact', component: ContactComponent},
+      {path: 'services', component: ServicesComponent},
+      {path: 'challenge', component: ChallengeComponent},
       {path: 'gallery', component: GalleryComponent},
     ]),
     NgbModule.forRoot()

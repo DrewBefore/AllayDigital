@@ -19,7 +19,7 @@ li:nth-child(odd) {
 }
 
 mat-card-subtitle {
-    width: 90%;
+    width: 75%;
 }
 
 .img {
@@ -35,7 +35,6 @@ mat-card-subtitle {
 mat-card-subtitle {
     color: white;
 } */
-
 
 .media-body {
     margin: 10px;

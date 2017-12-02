@@ -6,7 +6,7 @@
 	border: none;
 	font-family: inherit;
 	font-size: inherit;
-	color: #388e3c;
+	color: #86c33a;
 	background: none;
 	cursor: pointer;
 	padding: 10px 40px;
@@ -52,7 +52,7 @@
 /* Button 5 */
 .new-btn-5 {
     color: white;
-    background-color: #388e3c;
+    background-color: #86c33a;
 	height: 45px;
 	min-width: 100px;
 	line-height: 24px;
@@ -121,7 +121,7 @@
 
 .new-btn-5a:hover:before {
 	top: -13px;
-	color: green;
+	color: #86c33a;
 	background-color: white;
 }
 

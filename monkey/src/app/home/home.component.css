@@ -16,15 +16,23 @@ body {
   }
   /* Since positioning the image, we need to help out the caption */
   .carousel-caption {
-    bottom: 3rem;
+    bottom: 5rem;
     z-index: 10;
   }
   
+  h1 {
+    font-size: 4rem;
+  }
+
   /* Declare heights because of positioning of img element */
   .carousel-item {
     height: 32rem;
     background-color: #777;
-    text-shadow: 0px 2px 5px darkgreen;
+    text-shadow: 0px 2px 10px black;
+  }
+
+  h1 span {
+    color: #76ff03;
   }
   
   .carousel-item > img {
@@ -84,23 +92,51 @@ body {
     text-align: center;
   }
 
+  .edge-card {
+    height: 95%;
+    margin-top: 2.5%;
+  }
+
   .join:hover {
     color: #76ff03 !important;
     border-radius: 25%;
     border-bottom: 5px solid #76ff03;
     cursor: pointer;
     background-color: gray;
-    transform: translateY(-5px);
     box-shadow: 0px 5px 15px #888888;
     transition: .3s;
+  }
+
+  mat-card {
+    text-align: center;
   }
 
   @media (max-width: 768px) {
     .carousel-caption {
       text-align: center;
     }
+
+    h1 {
+      font-size: 3rem;
+    }
+    
     .join {
       margin-top: 15px;
+    }
+    
+    .edge-card {
+      height: 100%;
+      margin-top: 0;
+    }
+    mat-card {
+      margin: 10px;
+    }
+    mat-card img {
+      float: right;
+      margin-bottom: 10px;
+    }
+    mat-card h2, mat-card p {
+      text-align: left;
     }
     .showbutton {
       margin-bottom: 15px;
@@ -127,10 +163,7 @@ body {
     }
   }
 
-  .edge-card {
-    height: 95%;
-    margin-top: 2.5%;
-  }
+
 
   .zippy {
     margin-top: 10px;

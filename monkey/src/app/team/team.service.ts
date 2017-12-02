@@ -70,7 +70,7 @@ export class TeamService {
     { 
     name: "Corinne Messer", 
     title: "Personal Trainer, CPT", 
-    img: "../../assets/corrine.jpg", 
+    img: "./assets/corrine.jpg", 
     bio: [
       "Certified Personal Fitness Trainer - National Academy of Sports Medicine",
       "Exercise Science Nutrition Consultant, Precision Nutrition",
