@@ -20,6 +20,9 @@ body {
     z-index: 10;
   }
   
+  .second-slide {
+    opacity: 0.7;
+  }
   h1 {
     font-size: 4rem;
   }
