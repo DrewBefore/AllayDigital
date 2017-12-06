@@ -119,6 +119,15 @@ body {
       text-align: center;
     }
 
+    .middle-card img {
+      float: left;
+      margin-right: 10px;
+    }
+
+    .middle-card p, .middle-card h2 {
+      text-align: right;
+    }
+
     h1 {
       font-size: 3rem;
     }
