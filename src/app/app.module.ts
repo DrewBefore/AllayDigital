@@ -58,7 +58,6 @@ import { ServicesComponent } from './services/services.component';
       {path: 'challenge', component: ChallengeComponent},
       {path: 'gallery', component: GalleryComponent},
     ]),
-    NgbModule.forRoot()
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [TeamService],
