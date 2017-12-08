@@ -2,7 +2,8 @@
   "name": "monkeybargym",
   "version": "0.0.0",
   "engines": {
-    "node": "6.11.3"
+    "node": "6.11.1",
+    "npm": "3.10.10"
   },
   "license": "MIT",
   "scripts": {
@@ -12,7 +13,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build --prod",
+    "postinstall": "ng build --aot -prod",
     "deploy:gh": "ng build --prod --base-href=https://drewbefore.github.io/AllayDigital/ && ngh"
   },
   "private": true,
@@ -48,6 +49,7 @@
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
     "codelyzer": "~3.1.1",
+    "enhanced-resolve": "^3.3.0",
     "jasmine-core": "~2.6.2",
     "jasmine-spec-reporter": "~4.1.0",
     "karma": "~1.7.0",
